@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Habesha Eatery Menu</title>
+
+<style>
+    a{
+        color: aliceblue;
+    }
+
+body{
+    background-color: bisque;
+    margin:0;
+    font-family:Georgia, sans-serif;
+}
+
+
+
+nav{
+    background-color:rgb(44, 42, 42);
+    padding:20px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+
+
+
+
+h1{
+    text-align:center;
+    color:brown;
+    margin-top:30px;
+}
+
+
+
+
+
+.foods{
+    display:grid;
+    grid-template-columns:repeat(3,300px);
+    justify-content:center;
+    gap:25px;
+    padding:40px;
+}
+
+
+.card{
+
+    width:300px;
+    height:200px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+
+    border-radius:25px;
+
+
+    box-shadow:0 8px 15px rgba(0,0,0,0.4);
+
+
+    transition:0.3s;
+}
+
+
+.card:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 15px 25px rgba(0,0,0,0.6);
+
+}
+
+
+
+.card h2{
+
+    color:gold;
+    font-size:2rem;
+    margin:5px;
+}
+
+
+.card p{
+
+    color:white;
+    font-size:1.3rem;
+    font-weight:bold;
+
+    background-color:rgba(0,0,0,0.5);
+
+    padding:5px 10px;
+
+    border-radius:10px;
+
+    margin:5px;
+
+}
+
+
+
+
+
+
+.doro{
+    background-image:url("images/doro1.jpg");
+}
+
+.tibs{
+    background-image:url("images/tibs.jpg");
+}
+
+.kitfo{
+    background-image:url("images/kitfo.jpg");
+}
+
+.firfir{
+    background-image:url("images/firfir.jpg");
+}
+
+.shiro{
+    background-image:url("images/shiro.jpg");
+}
+
+.gomen{
+    background-image:url("images/gomen.jpg");
+}
+
+.misir{
+    background-image:url("images/misir.jpg");
+}
+
+.dulet{
+    background-image:url("images/dulet.jpg");
+}
+
+.enkulal{
+    background-image:url("images/enkulala.jpg");
+}
+
+
+
+
+
+.drinks{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,200px);
+
+    justify-content:center;
+
+    gap:25px;
+
+    padding:40px;
+
+}
+
+
+.drink-card{
+
+    background:white;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+
+    box-shadow:0 5px 12px rgba(0,0,0,0.3);
+
+
+    transition:0.3s;
+
+}
+
+
+
+.drink-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+.drink-card h2{
+
+    color:brown;
+
+}
+
+
+.drink-card p{
+
+    color:black;
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+}
+button{
+    color: black;
+    background-color: brown;
+    font-size: 30px;
+    border: 12px solid brown;
+    padding: 8px;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+button:hover{
+    transition: 0.9s;
+    transform: scale(1.05);
+
+}
+.but{
+    display: flex;
+    justify-content: center;
+    }
+
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mymenu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+    <a href="reservation.html">Reservation</a>
+</nav>
+
+
+
+<h1>🍽 Ethiopian Foods</h1>
+
+
+<section class="foods">
+
+
+<div class="card doro">
+<h2>Doro Wot</h2>
+<p>2000 birr</p>
+</div>
+
+
+<div class="card tibs">
+<h2>Tibs</h2>
+<p>1000 birr</p>
+</div>
+
+
+<div class="card kitfo">
+<h2>Kitfo</h2>
+<p>600 birr</p>
+</div>
+
+
+<div class="card firfir">
+<h2>Firfir</h2>
+<p>170 birr</p>
+</div>
+
+
+<div class="card shiro">
+<h2>Shiro Wot</h2>
+<p>200 birr</p>
+</div>
+
+
+<div class="card gomen">
+<h2>Gomen</h2>
+<p>185 birr</p>
+</div>
+
+
+<div class="card misir">
+<h2>Misir Wot</h2>
+<p>250 birr</p>
+</div>
+
+
+<div class="card dulet">
+<h2>Dulet</h2>
+<p>450 birr</p>
+</div>
+
+
+<div class="card enkulal">
+<h2>Enkulal Firfir</h2>
+<p>280 birr</p>
+</div>
+
+
+</section>
+
+
+
+
+<h1>☕️ Drinks</h1>
+
+
+<section class="drinks">
+
+
+<div class="drink-card">
+<h2>Coffee</h2>
+<p>100 birr</p>
+</div>
+
+
+<div class="drink-card">
+<h2>Tej</h2>
+<p>300 birr</p>
+</div>
+
+
+<div class="drink-card">
+<h2>Tella</h2>
+<p>150 birr</p>
+</div>
+
+
+<div class="drink-card">
+<h2>Areke</h2>
+<p>250 birr</p>
+</div>
+
+
+<div class="drink-card">
+<h2>Juice</h2>
+<p>120 birr</p>
+</div>
+
+
+<div class="drink-card">
+<h2>Milk</h2>
+<p>80 birr</p>
+</div>
+
+
+</section>
+<div class="but">
+<button><a href="reserv.html"> Reserve </button>
+</div>
+
+
+</body>
+</html>
